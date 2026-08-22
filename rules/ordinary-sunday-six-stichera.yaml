@@ -1,0 +1,50 @@
+schema: typikon.rule/v0.1
+
+id: ordinary-sunday-six-stichera
+
+when:
+  service: great_vespers
+  day:
+    weekday: sunday
+    phase: ordinary
+  observance:
+    rank: six-stichera
+    properties:
+      has_glory: true
+
+emit:
+  - section: lord_i_call
+    slot: stichera
+    material:
+      source: octoechos
+      kind: sticheron
+      role: resurrectional
+      tone: $day.tone
+    count: 6
+
+  - section: lord_i_call
+    slot: stichera
+    material:
+      source: observance
+      kind: sticheron
+      role: festal
+      observance: $observance.id
+    count: 4
+
+  - section: lord_i_call
+    slot: glory
+    material:
+      source: observance
+      kind: sticheron
+      role: doxastikon
+      observance: $observance.id
+
+  - section: lord_i_call
+    slot: both_now
+    material:
+      source: octoechos
+      kind: theotokion
+      tone: $observance.properties.glory_tone
+
+authority:
+  - goarch-dcs-2026-07-25-vespers

@@ -1,0 +1,16 @@
+schema: typikon.observance/v0.1
+
+id: paraskevi-rome
+name: St Paraskevi of Rome
+
+date:
+  fixed:
+    month: 7
+    day: 26
+
+# Pack vocabulary inferred only for this observed fixture; pending review.
+rank: six-stichera
+
+properties:
+  has_glory: true
+  glory_tone: plagal_second
