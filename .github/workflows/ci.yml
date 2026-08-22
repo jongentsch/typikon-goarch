@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate GOARCH pack
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out GOARCH pack
+        uses: actions/checkout@v6
+        with:
+          path: typikon-goarch
+      - name: Check out engine
+        uses: actions/checkout@v6
+        with:
+          repository: jongentsch/typikon-engine
+          path: typikon-engine
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Validate pack
+        run: >-
+          cargo run --locked --manifest-path typikon-engine/Cargo.toml
+          -p typikon-cli -- validate typikon-goarch
+      - name: Compile observed Paraskevi case
+        run: >-
+          cargo run --locked --manifest-path typikon-engine/Cargo.toml
+          -p typikon-cli -- compile-service
+          --pack typikon-goarch
+          --date 2026-07-25
+          --service great_vespers
+          --tone grave

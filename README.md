@@ -1,5 +1,7 @@
 # Experimental GOARCH tradition pack
 
+[![CI](https://github.com/jongentsch/typikon-goarch/actions/workflows/ci.yml/badge.svg)](https://github.com/jongentsch/typikon-goarch/actions/workflows/ci.yml)
+
 This is a runtime resource pack for the sibling `typikon-engine` project. It is
 an engineering fixture, not an approved or complete GOARCH Typikon.
 
@@ -20,3 +22,6 @@ cargo run -p typikon-cli -- compile-service --pack ../typikon-goarch \
 
 License selection for this tradition pack is pending and independent of the
 engine's license.
+
+GitHub Actions validates the pack with the sibling engine's CLI and compiles
+the observed Paraskevi case on every push and pull request.
