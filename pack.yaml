@@ -6,7 +6,18 @@ version: 0.1.0
 
 calendar:
   fixed: revised_julian
-  paschalion: orthodox
+  paschalion: orthodox_julian
+  tone_cycle:
+    system: octoechos
+    tones:
+      - first
+      - second
+      - third
+      - fourth
+      - plagal_first
+      - plagal_second
+      - grave
+      - plagal_fourth
 
 definitions:
   services: services/

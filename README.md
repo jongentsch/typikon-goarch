@@ -21,8 +21,11 @@ No liturgical text is included. The materials are semantic specifications only.
 cd ../typikon-engine
 cargo run -p typikon-cli -- validate ../typikon-goarch
 cargo run -p typikon-cli -- compile-service --pack ../typikon-goarch \
-  --date 2026-07-25 --service great_vespers --tone grave
+  --date 2026-07-25 --service great_vespers
 ```
+
+The pack maps the calculated eight-tone ordinal to Byzantine mode names; the
+caller does not supply the mode.
 
 License selection for this tradition pack is pending and independent of the
 engine's license.

@@ -38,7 +38,6 @@ jobs:
           --pack typikon-goarch
           --date 2026-07-25
           --service great_vespers
-          --tone grave
       - name: Compile observed St Stephen case
         run: >-
           cargo run --locked --manifest-path typikon-engine/Cargo.toml
@@ -46,4 +45,3 @@ jobs:
           --pack typikon-goarch
           --date 2026-08-01
           --service great_vespers
-          --tone plagal_fourth
