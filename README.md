@@ -11,6 +11,10 @@ Their authority records are deliberately typed `observed_behavior`: the
 fixtures check whether the compiler reproduces production output, but they do
 not claim that DCS explains the governing rubric.
 
+Both records are categorized `dated_witness`, so their applicability is limited
+to the stated liturgical date. This pack does not yet assert a reusable
+`scoped_claim` for the arrangement.
+
 No liturgical text is included. The materials are semantic specifications only.
 
 ```console
