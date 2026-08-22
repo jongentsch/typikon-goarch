@@ -5,11 +5,11 @@
 This is a runtime resource pack for the sibling `typikon-engine` project. It is
 an engineering fixture, not an approved or complete GOARCH Typikon.
 
-The one case records observed Digital Chant Stand output for the civil evening
-of 2026-07-25 (liturgical date 2026-07-26, St Paraskevi). Its authority record
-is deliberately typed `observed_behavior`: the fixture checks whether the
-compiler reproduces production output, but it does not claim that DCS explains
-the governing rubric.
+Two cases record observed Digital Chant Stand output for the civil evenings of
+2026-07-25 (St Paraskevi) and 2026-08-01 (translation of St Stephen's relic).
+Their authority records are deliberately typed `observed_behavior`: the
+fixtures check whether the compiler reproduces production output, but they do
+not claim that DCS explains the governing rubric.
 
 No liturgical text is included. The materials are semantic specifications only.
 
@@ -24,4 +24,4 @@ License selection for this tradition pack is pending and independent of the
 engine's license.
 
 GitHub Actions validates the pack with the sibling engine's CLI and compiles
-the observed Paraskevi case on every push and pull request.
+both dated observations on every push and pull request.

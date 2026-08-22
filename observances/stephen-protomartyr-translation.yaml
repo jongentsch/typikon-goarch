@@ -1,0 +1,19 @@
+schema: typikon.observance/v0.1
+
+id: stephen-protomartyr-translation
+name: Memory of the Transfer of the Relic of Saint Stephen the Protomartyr
+
+date:
+  fixed:
+    month: 8
+    day: 2
+
+# Pack vocabulary inferred only for this observed fixture; pending review.
+rank: six-stichera
+
+authority:
+  - goarch-dcs-2026-08-01-vespers
+
+properties:
+  has_glory: true
+  both_now_tone: plagal_fourth

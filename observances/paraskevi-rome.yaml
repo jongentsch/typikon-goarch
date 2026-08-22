@@ -11,6 +11,9 @@ date:
 # Pack vocabulary inferred only for this observed fixture; pending review.
 rank: six-stichera
 
+authority:
+  - goarch-dcs-2026-07-25-vespers
+
 properties:
   has_glory: true
-  glory_tone: plagal_second
+  both_now_tone: plagal_second

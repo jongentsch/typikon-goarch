@@ -44,7 +44,4 @@ emit:
     material:
       source: octoechos
       kind: theotokion
-      tone: $observance.properties.glory_tone
-
-authority:
-  - goarch-dcs-2026-07-25-vespers
+      tone: $observance.properties.both_now_tone

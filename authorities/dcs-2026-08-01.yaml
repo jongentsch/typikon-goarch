@@ -1,0 +1,15 @@
+schema: typikon.authority/v0.1
+
+id: goarch-dcs-2026-08-01-vespers
+title: Digital Chant Stand generated Vespers for August 1, 2026
+kind: observed_behavior
+publisher: Greek Orthodox Archdiocese of America
+
+locator:
+  service: Vespers
+  liturgical_date: 2026-08-02
+  section: Lord I Call
+
+reference:
+  url: https://dcs.goarch.org/goa/dcs/h/s/2026/08/01/ve/en/index.html
+  accessed: 2026-08-22
