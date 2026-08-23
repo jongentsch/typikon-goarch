@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-presentation-christ-temple-vespers-2026
+title: Presentation of Christ in the Temple - Vespers proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-presentation-christ-temple-eve-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260201.html

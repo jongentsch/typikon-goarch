@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-elevation-holy-cross-divine-liturgy-2026
+title: Elevation of the Holy Cross - Divine Liturgy proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-elevation-holy-cross-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260914.html

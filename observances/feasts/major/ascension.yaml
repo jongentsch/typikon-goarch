@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: ascension
 name: Ascension of Our Lord
@@ -12,11 +12,13 @@ authority:
   - goarch-ascension-eve-2026
   - goarch-ascension-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-ascension-vespers-2026
+  matins:
+    complete-propers: goarch-ascension-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-ascension-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-ascension-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260520.html
-  matins_bundle: goarch-ascension-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260521.html
-  divine_liturgy_bundle: goarch-ascension-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260521.html

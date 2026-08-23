@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: nativity-christ
 name: Nativity of Christ
@@ -14,11 +14,13 @@ authority:
   - goarch-nativity-christ-eve-2026
   - goarch-nativity-christ-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-nativity-christ-vespers-2026
+  matins:
+    complete-propers: goarch-nativity-christ-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-nativity-christ-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-nativity-christ-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261224.html
-  matins_bundle: goarch-nativity-christ-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261225.html
-  divine_liturgy_bundle: goarch-nativity-christ-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261225.html

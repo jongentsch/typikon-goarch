@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: presentation-christ-temple
 name: Presentation of Christ in the Temple
@@ -14,11 +14,13 @@ authority:
   - goarch-presentation-christ-temple-eve-2026
   - goarch-presentation-christ-temple-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-presentation-christ-temple-vespers-2026
+  matins:
+    complete-propers: goarch-presentation-christ-temple-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-presentation-christ-temple-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-presentation-christ-temple-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260201.html
-  matins_bundle: goarch-presentation-christ-temple-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260202.html
-  divine_liturgy_bundle: goarch-presentation-christ-temple-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260202.html

@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-entrance-theotokos-divine-liturgy-2026
+title: Entrance of the Theotokos into the Temple - Divine Liturgy proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-entrance-theotokos-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261121.html

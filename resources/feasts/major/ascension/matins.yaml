@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-ascension-orthros-2026
+title: Ascension of Our Lord - Matins (Orthros) proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-ascension-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260521.html

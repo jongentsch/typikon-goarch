@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: dormition-theotokos
 name: Dormition of the Theotokos
@@ -14,11 +14,13 @@ authority:
   - goarch-dormition-theotokos-eve-2026
   - goarch-dormition-theotokos-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-dormition-theotokos-vespers-2026
+  matins:
+    complete-propers: goarch-dormition-theotokos-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-dormition-theotokos-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-dormition-theotokos-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260814.html
-  matins_bundle: goarch-dormition-theotokos-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260815.html
-  divine_liturgy_bundle: goarch-dormition-theotokos-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260815.html

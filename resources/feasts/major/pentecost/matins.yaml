@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-pentecost-orthros-2026
+title: Holy Pentecost - Matins (Orthros) proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-pentecost-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260531.html

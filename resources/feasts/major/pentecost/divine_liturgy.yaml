@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-pentecost-divine-liturgy-2026
+title: Holy Pentecost - Divine Liturgy proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-pentecost-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260531.html

@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-presentation-christ-temple-orthros-2026
+title: Presentation of Christ in the Temple - Matins (Orthros) proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-presentation-christ-temple-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260202.html

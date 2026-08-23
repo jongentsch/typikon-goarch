@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-nativity-christ-vespers-2026
+title: Nativity of Christ - Vespers proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-nativity-christ-eve-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261224.html

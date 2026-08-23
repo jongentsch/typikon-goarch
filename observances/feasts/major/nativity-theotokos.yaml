@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: nativity-theotokos
 name: Nativity of the Theotokos
@@ -14,11 +14,13 @@ authority:
   - goarch-nativity-theotokos-eve-2026
   - goarch-nativity-theotokos-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-nativity-theotokos-vespers-2026
+  matins:
+    complete-propers: goarch-nativity-theotokos-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-nativity-theotokos-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-nativity-theotokos-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260907.html
-  matins_bundle: goarch-nativity-theotokos-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260908.html
-  divine_liturgy_bundle: goarch-nativity-theotokos-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260908.html

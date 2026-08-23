@@ -1,0 +1,12 @@
+schema: typikon.resource/v0.1
+
+id: goarch-nativity-christ-divine-liturgy-2026
+title: Nativity of Christ - Divine Liturgy proper bundle
+kind: service-bundle
+role: complete-propers
+
+authority:
+  - goarch-nativity-christ-day-2026
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261225.html

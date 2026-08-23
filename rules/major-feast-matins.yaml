@@ -1,4 +1,4 @@
-schema: typikon.rule/v0.1
+schema: typikon.rule/v0.2
 
 id: major-feast-matins
 
@@ -12,13 +12,7 @@ when:
 emit:
   - section: propers
     slot: feast
-    material:
-      source: official-service-bundle
-      kind: feast-propers
-      role: complete
-      observance: $observance.id
-      bundle: $observance.properties.matins_bundle
-      reference: $observance.properties.matins_reference
+    appointment: complete-propers
 
 authority:
   - goarch-major-feast-service-bundles

@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.2
+schema: typikon.observance/v0.3
 
 id: transfiguration
 name: Transfiguration of Our Lord
@@ -14,11 +14,13 @@ authority:
   - goarch-transfiguration-eve-2026
   - goarch-transfiguration-day-2026
 
+appointments:
+  vespers:
+    complete-propers: goarch-transfiguration-vespers-2026
+  matins:
+    complete-propers: goarch-transfiguration-orthros-2026
+  divine_liturgy:
+    complete-propers: goarch-transfiguration-divine-liturgy-2026
+
 properties:
   major_feast: true
-  vespers_bundle: goarch-transfiguration-vespers-2026
-  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260805.html
-  matins_bundle: goarch-transfiguration-orthros-2026
-  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260806.html
-  divine_liturgy_bundle: goarch-transfiguration-divine-liturgy-2026
-  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260806.html
