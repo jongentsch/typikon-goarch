@@ -1,0 +1,11 @@
+schema: typikon.service/v0.1
+
+id: vespers
+name: Vespers feast propers
+liturgical_day_offset: 1
+
+sections:
+  - id: propers
+    slots:
+      - id: feast
+        cardinality: one

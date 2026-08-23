@@ -1,0 +1,24 @@
+schema: typikon.observance/v0.1
+
+id: nativity-theotokos
+name: Nativity of the Theotokos
+
+date:
+  fixed:
+    month: 9
+    day: 8
+
+rank: major-feast
+
+authority:
+  - goarch-nativity-theotokos-eve-2026
+  - goarch-nativity-theotokos-day-2026
+
+properties:
+  major_feast: true
+  vespers_bundle: goarch-nativity-theotokos-vespers-2026
+  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260907.html
+  matins_bundle: goarch-nativity-theotokos-orthros-2026
+  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260908.html
+  divine_liturgy_bundle: goarch-nativity-theotokos-divine-liturgy-2026
+  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260908.html

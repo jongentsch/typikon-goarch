@@ -1,0 +1,18 @@
+schema: typikon.authority/v0.1
+
+id: goarch-major-feast-service-bundles
+title: GOARCH Digital Chant Stand major-feast service bundles
+category: scoped_claim
+kind: authoritative
+
+sources:
+  - goarch-dcs-major-feast-source
+
+claim: >-
+  The GOARCH Digital Chant Stand publishes dated, generated service orders for
+  Vespers or Vesperal Liturgy, Matins (Orthros), and Divine Liturgy. A semantic renderer
+  may treat the linked dated index as the complete proper bundle for that feast
+  and service while ordinary invariant material remains in its base template.
+
+locator:
+  scope: Twelve major feasts; 2026 dated fixtures; feast-variable propers

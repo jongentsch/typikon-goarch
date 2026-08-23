@@ -1,0 +1,16 @@
+schema: typikon.authority/v0.1
+
+id: goarch-transfiguration-day-2026
+title: Digital Chant Stand feast-day services for Transfiguration of Our Lord, 2026
+category: dated_witness
+kind: observed_behavior
+publisher: Greek Orthodox Archdiocese of America
+
+locator:
+  liturgical_date: 2026-08-06
+  services: Matins (Orthros) and Divine Liturgy
+  scope: Feast-variable propers
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260806.html
+  accessed: 2026-08-22

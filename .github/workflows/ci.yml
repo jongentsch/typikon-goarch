@@ -45,3 +45,11 @@ jobs:
           --pack typikon-goarch
           --date 2026-08-01
           --service great_vespers
+      - name: Compile Nativity of Christ service cycle from date only
+        run: >-
+          cargo run --locked --manifest-path typikon-engine/Cargo.toml
+          -p typikon-cli -- compile-date --pack typikon-goarch --date 2026-12-25
+      - name: Compile movable Pentecost service cycle
+        run: >-
+          cargo run --locked --manifest-path typikon-engine/Cargo.toml
+          -p typikon-cli -- compile-date --pack typikon-goarch --date 2026-05-31

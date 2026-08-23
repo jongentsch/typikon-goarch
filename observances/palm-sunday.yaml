@@ -1,0 +1,20 @@
+schema: typikon.observance/v0.1
+
+id: palm-sunday
+name: Entry of Our Lord into Jerusalem
+
+rank: major-feast
+
+authority:
+  - goarch-palm-sunday-eve-2026
+  - goarch-palm-sunday-day-2026
+
+properties:
+  major_feast: true
+  pascha_offset_days: -7
+  vespers_bundle: goarch-palm-sunday-vespers-2026
+  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260404.html
+  matins_bundle: goarch-palm-sunday-orthros-2026
+  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260405.html
+  divine_liturgy_bundle: goarch-palm-sunday-divine-liturgy-2026
+  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260405.html

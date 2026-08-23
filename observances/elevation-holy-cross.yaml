@@ -1,0 +1,24 @@
+schema: typikon.observance/v0.1
+
+id: elevation-holy-cross
+name: Elevation of the Holy Cross
+
+date:
+  fixed:
+    month: 9
+    day: 14
+
+rank: major-feast
+
+authority:
+  - goarch-elevation-holy-cross-eve-2026
+  - goarch-elevation-holy-cross-day-2026
+
+properties:
+  major_feast: true
+  vespers_bundle: goarch-elevation-holy-cross-vespers-2026
+  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260913.html
+  matins_bundle: goarch-elevation-holy-cross-orthros-2026
+  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260914.html
+  divine_liturgy_bundle: goarch-elevation-holy-cross-divine-liturgy-2026
+  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260914.html

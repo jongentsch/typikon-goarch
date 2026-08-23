@@ -1,0 +1,20 @@
+schema: typikon.observance/v0.1
+
+id: pentecost
+name: Holy Pentecost
+
+rank: major-feast
+
+authority:
+  - goarch-pentecost-eve-2026
+  - goarch-pentecost-day-2026
+
+properties:
+  major_feast: true
+  pascha_offset_days: 49
+  vespers_bundle: goarch-pentecost-vespers-2026
+  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260530.html
+  matins_bundle: goarch-pentecost-orthros-2026
+  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260531.html
+  divine_liturgy_bundle: goarch-pentecost-divine-liturgy-2026
+  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260531.html

@@ -1,0 +1,16 @@
+schema: typikon.authority/v0.1
+
+id: goarch-theophany-eve-2026
+title: Digital Chant Stand eve services for Theophany of Our Lord, 2026
+category: dated_witness
+kind: observed_behavior
+publisher: Greek Orthodox Archdiocese of America
+
+locator:
+  liturgical_date: 2026-01-06
+  services: Vespers or Vesperal Liturgy
+  scope: Feast-variable propers
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260105.html
+  accessed: 2026-08-22

@@ -1,0 +1,24 @@
+schema: typikon.rule/v0.1
+
+id: major-feast-vespers
+
+when:
+  service: vespers
+  observance:
+    rank: major-feast
+    properties:
+      major_feast: true
+
+emit:
+  - section: propers
+    slot: feast
+    material:
+      source: official-service-bundle
+      kind: feast-propers
+      role: complete
+      observance: $observance.id
+      bundle: $observance.properties.vespers_bundle
+      reference: $observance.properties.vespers_reference
+
+authority:
+  - goarch-major-feast-service-bundles

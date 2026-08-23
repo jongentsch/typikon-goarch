@@ -1,0 +1,11 @@
+schema: typikon.service/v0.1
+
+id: matins
+name: Orthros (Matins) feast propers
+liturgical_day_offset: 0
+
+sections:
+  - id: propers
+    slots:
+      - id: feast
+        cardinality: one

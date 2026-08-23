@@ -1,0 +1,24 @@
+schema: typikon.observance/v0.1
+
+id: entrance-theotokos
+name: Entrance of the Theotokos into the Temple
+
+date:
+  fixed:
+    month: 11
+    day: 21
+
+rank: major-feast
+
+authority:
+  - goarch-entrance-theotokos-eve-2026
+  - goarch-entrance-theotokos-day-2026
+
+properties:
+  major_feast: true
+  vespers_bundle: goarch-entrance-theotokos-vespers-2026
+  vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261120.html
+  matins_bundle: goarch-entrance-theotokos-orthros-2026
+  matins_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261121.html
+  divine_liturgy_bundle: goarch-entrance-theotokos-divine-liturgy-2026
+  divine_liturgy_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20261121.html

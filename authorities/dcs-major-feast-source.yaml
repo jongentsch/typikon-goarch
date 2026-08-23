@@ -1,0 +1,14 @@
+schema: typikon.authority/v0.1
+
+id: goarch-dcs-major-feast-source
+title: GOARCH Digital Chant Stand service and music library
+category: source
+kind: authoritative
+publisher: Greek Orthodox Archdiocese of America
+
+locator:
+  scope: Official service books, dated service orders, and music resources
+
+reference:
+  url: https://digitalchantstand.goarch.org/goa/dcs/booksindex.html
+  accessed: 2026-08-22
