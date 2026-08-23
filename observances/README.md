@@ -1,12 +1,50 @@
 # Observance organization
 
-The engine recursively loads YAML beneath this directory.
+The engine recursively loads YAML beneath this directory. Every jurisdiction
+pack uses the same maintenance taxonomy:
 
-- `feasts/major/` contains major feasts.
-- `feasts/minor/` is reserved for minor feasts.
-- `saints/<type>/` groups saints by a practical subtype such as `martyrs/`,
-  `monastics/`, or `hierarchs/`.
-- Other general types may use the same pattern when needed.
+```text
+observances/
+|-- feasts/
+|   |-- major/
+|   |-- minor/
+|   |-- forefeasts/
+|   |-- afterfeasts/
+|   `-- leavetakings/
+|-- saints/
+|   |-- apostles/
+|   |-- confessors/
+|   |-- equal-to-apostles/
+|   |-- fools-for-christ/
+|   |-- hierarchs/
+|   |-- martyrs/
+|   |-- monastics/
+|   |-- prophets/
+|   |-- righteous/
+|   |-- synaxes/
+|   `-- unmercenaries/
+|-- angels/
+|   |-- archangels/
+|   `-- hosts/
+|-- icons/
+|   |-- christ/
+|   |-- saints/
+|   `-- theotokos/
+|-- councils/
+|   |-- ecumenical/
+|   `-- local/
+`-- commemorations/
+    |-- dedications/
+    |-- departed/
+    `-- historical-events/
+```
 
-These paths are a maintenance taxonomy only. A document's stable `id` is its
-reference key and its YAML fields determine liturgical behavior.
+Use the primary liturgical title in this pack's official calendar when a saint
+has several titles. `martyrs/` includes great, hiero-, monastic, new, virgin,
+and other martyr titles; `monastics/` includes saints styled venerable. Keep a
+saint-centered event such as the finding or translation of relics with that
+saint's subtype. Add a new subtype only when official pack data cannot fit one
+of these categories cleanly.
+
+These paths do not carry engine semantics. A document's stable `id` is its
+reference key, and its YAML fields determine liturgical behavior.
