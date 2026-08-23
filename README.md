@@ -23,9 +23,9 @@ Orthros, and Divine Liturgy. The DCS output remains observed behavior; the
 general claim is limited to DCS publishing those service bundles.
 
 Fixed feasts and the three Paschal-cycle observances are discovered
-automatically. The latter use the existing scalar `pascha_offset_days`
-property; conformance tests separately prove their 2026 offsets from the
-calculated Orthodox Pascha.
+automatically through the typed `date.fixed` and `date.paschal_offset` forms;
+conformance tests separately prove their 2026 offsets from calculated Orthodox
+Pascha.
 
 No liturgical text is included. The materials are semantic specifications only.
 

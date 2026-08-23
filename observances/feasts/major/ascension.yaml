@@ -1,7 +1,10 @@
-schema: typikon.observance/v0.1
+schema: typikon.observance/v0.2
 
 id: ascension
 name: Ascension of Our Lord
+
+date:
+  paschal_offset: 39
 
 rank: major-feast
 
@@ -11,7 +14,6 @@ authority:
 
 properties:
   major_feast: true
-  pascha_offset_days: 39
   vespers_bundle: goarch-ascension-vespers-2026
   vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260520.html
   matins_bundle: goarch-ascension-orthros-2026

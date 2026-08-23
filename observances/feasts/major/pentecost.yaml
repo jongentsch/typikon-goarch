@@ -1,7 +1,10 @@
-schema: typikon.observance/v0.1
+schema: typikon.observance/v0.2
 
 id: pentecost
 name: Holy Pentecost
+
+date:
+  paschal_offset: 49
 
 rank: major-feast
 
@@ -11,7 +14,6 @@ authority:
 
 properties:
   major_feast: true
-  pascha_offset_days: 49
   vespers_bundle: goarch-pentecost-vespers-2026
   vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260530.html
   matins_bundle: goarch-pentecost-orthros-2026

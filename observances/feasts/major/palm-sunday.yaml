@@ -1,7 +1,10 @@
-schema: typikon.observance/v0.1
+schema: typikon.observance/v0.2
 
 id: palm-sunday
 name: Entry of Our Lord into Jerusalem
+
+date:
+  paschal_offset: -7
 
 rank: major-feast
 
@@ -11,7 +14,6 @@ authority:
 
 properties:
   major_feast: true
-  pascha_offset_days: -7
   vespers_bundle: goarch-palm-sunday-vespers-2026
   vespers_reference: https://digitalchantstand.goarch.org/goa/dcs/indexes/20260404.html
   matins_bundle: goarch-palm-sunday-orthros-2026
