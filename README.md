@@ -21,10 +21,6 @@ feast parameter. Their Digital Chant Stand evidence is retained, but dated
 normalized by component, compiled feast plans truthfully report
 `requires_review` and name every unresolved component.
 
-The former bundle wrappers are preserved only under
-`archive/legacy-resource-bundles/` for migration history; the pack manifest and
-runtime do not load them.
-
 ```console
 cd ../typikon-engine
 cargo run -p typikon-cli -- validate ../typikon-goarch
