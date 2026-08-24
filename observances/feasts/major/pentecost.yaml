@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: pentecost
 name: Holy Pentecost
@@ -11,14 +11,6 @@ rank: major-feast
 authority:
   - goarch-pentecost-eve-2026
   - goarch-pentecost-day-2026
-
-appointments:
-  vespers:
-    complete-propers: goarch-pentecost-vespers-2026
-  matins:
-    complete-propers: goarch-pentecost-orthros-2026
-  divine_liturgy:
-    complete-propers: goarch-pentecost-divine-liturgy-2026
 
 properties:
   major_feast: true

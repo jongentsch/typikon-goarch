@@ -1,11 +1,219 @@
-schema: typikon.service/v0.1
+schema: typikon.service/v0.2
 
 id: divine_liturgy
-name: Divine Liturgy feast propers
+name: Divine Liturgy
 liturgical_day_offset: 0
+authority:
+  - goarch-dcs-major-feast-source
+default_form: chrysostom
+forms:
+  - id: chrysostom
+    name: Divine Liturgy of Saint John Chrysostom
+    authority:
+      - goarch-dcs-major-feast-source
+  - id: basil
+    name: Divine Liturgy of Saint Basil the Great
+    authority:
+      - goarch-dcs-major-feast-source
 
 sections:
-  - id: propers
-    slots:
-      - id: feast
+  - id: preparation
+    name: Preparation and Enarxis
+    components:
+      - id: opening_blessing
+        name: Opening blessing
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Opening blessing
+          citation: 'Divine Liturgy: opening blessing'
+      - id: great_litany
+        name: Great Litany
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Great Litany
+          citation: 'Divine Liturgy: Litany of Peace'
+      - id: antiphons
+        name: Antiphons or Typika and Beatitudes
+        kind: changeable
+        cardinality: many
+        accepts:
+          - antiphon
+          - typika
+          - beatitudes
+  - id: little_entrance
+    name: Little Entrance
+    components:
+      - id: entrance_prayer
+        name: Prayer of the Little Entrance
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Prayer of the Little Entrance
+          citation: 'Divine Liturgy: Little Entrance'
+      - id: entrance_hymn
+        name: Entrance Hymn
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - entrance_hymn
+  - id: hymns
+    name: Troparia and Trisagion
+    components:
+      - id: troparia
+        name: Troparia
+        kind: changeable
+        cardinality: many
+        accepts:
+          - troparion
+          - apolytikion
+      - id: kontakia
+        name: Kontakia
+        kind: changeable
+        cardinality: many
+        accepts:
+          - kontakion
+      - id: trisagion
+        name: Trisagion or appointed substitute
+        kind: changeable
         cardinality: one
+        accepts:
+          - trisagion
+          - trisagion_substitute
+  - id: readings
+    name: Liturgy of the Word
+    components:
+      - id: prokeimenon
+        name: Prokeimenon
+        kind: changeable
+        cardinality: one
+        accepts:
+          - prokeimenon
+      - id: epistle
+        name: Epistle
+        kind: changeable
+        cardinality: one
+        accepts:
+          - epistle
+      - id: alleluia
+        name: Alleluia and verses
+        kind: changeable
+        cardinality: one
+        accepts:
+          - alleluia
+      - id: gospel
+        name: Gospel
+        kind: changeable
+        cardinality: one
+        accepts:
+          - gospel
+      - id: homily_position
+        name: Place appointed for the homily
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Place appointed for the homily
+          citation: 'Divine Liturgy: after the Gospel'
+  - id: faithful
+    name: Liturgy of the Faithful
+    components:
+      - id: litanies
+        name: Litanies of the Faithful
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Litanies of the Faithful
+          citation: 'Divine Liturgy: litanies before the Great Entrance'
+      - id: cherubic_hymn
+        name: Cherubic Hymn or appointed substitute
+        kind: changeable
+        cardinality: one
+        accepts:
+          - cherubic_hymn
+          - cherubic_substitute
+      - id: creed
+        name: Nicene-Constantinopolitan Creed
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Nicene-Constantinopolitan Creed
+          citation: 'Divine Liturgy: Symbol of Faith'
+  - id: anaphora
+    name: Anaphora
+    components:
+      - id: eucharistic_prayer
+        name: Eucharistic prayer
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Eucharistic prayer
+          citation: 'Divine Liturgy of Saint John Chrysostom: Anaphora'
+        form_material:
+          chrysostom:
+            kind: fixed_text
+            title: Anaphora of Saint John Chrysostom
+            citation: 'Divine Liturgy of Saint John Chrysostom: Anaphora'
+          basil:
+            kind: fixed_text
+            title: Anaphora of Saint Basil the Great
+            citation: 'Divine Liturgy of Saint Basil the Great: Anaphora'
+      - id: megalynarion
+        name: Megalynarion or hymn to the Theotokos
+        kind: changeable
+        cardinality: one
+        accepts:
+          - megalynarion
+          - theotokion
+  - id: communion
+    name: Communion
+    components:
+      - id: lords_prayer
+        name: The Lord's Prayer
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: The Lord's Prayer
+          citation: 'Matthew 6:9-13'
+      - id: communion_hymn
+        name: Communion Hymn
+        kind: changeable
+        cardinality: one
+        accepts:
+          - communion_hymn
+      - id: communion
+        name: Communion of clergy and faithful
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Communion of clergy and faithful
+          citation: 'Divine Liturgy: Holy Communion'
+      - id: post_communion
+        name: Seasonal post-Communion hymn
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - post_communion
+  - id: dismissal
+    name: Thanksgiving and Dismissal
+    components:
+      - id: thanksgiving_litany
+        name: Thanksgiving litany and prayer behind the ambo
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Thanksgiving litany and prayer behind the ambo
+          citation: 'Divine Liturgy: Thanksgiving'
+      - id: dismissal_commemorations
+        name: Dismissal commemorations
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - dismissal_commemoration
+      - id: final_blessing
+        name: Final blessing
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Final blessing
+          citation: 'Divine Liturgy: Dismissal'

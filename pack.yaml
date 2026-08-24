@@ -1,8 +1,8 @@
-schema: typikon.pack/v0.2
+schema: typikon.pack/v0.3
 
 id: goarch-experimental
 name: Greek Orthodox Archdiocese of America (experimental fixture)
-version: 0.1.0
+version: 0.2.0
 
 calendar:
   fixed: revised_julian
@@ -22,6 +22,6 @@ calendar:
 definitions:
   services: services/
   observances: observances/
-  resources: resources/
+  ranks: ranks/
   rules: rules/
   authorities: authorities/

@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: transfiguration
 name: Transfiguration of Our Lord
@@ -13,14 +13,6 @@ rank: major-feast
 authority:
   - goarch-transfiguration-eve-2026
   - goarch-transfiguration-day-2026
-
-appointments:
-  vespers:
-    complete-propers: goarch-transfiguration-vespers-2026
-  matins:
-    complete-propers: goarch-transfiguration-orthros-2026
-  divine_liturgy:
-    complete-propers: goarch-transfiguration-divine-liturgy-2026
 
 properties:
   major_feast: true

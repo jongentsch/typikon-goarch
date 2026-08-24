@@ -1,18 +1,54 @@
-schema: typikon.rule/v0.2
+schema: typikon.rule/v0.3
 
 id: major-feast-matins
-
 when:
   service: matins
   observance:
     rank: major-feast
     properties:
       major_feast: true
-
 emit:
-  - section: propers
-    slot: feast
-    appointment: complete-propers
-
+  - section: god_is_lord
+    component: invitatory
+    observance: true
+  - section: god_is_lord
+    component: apolytikia
+    observance: true
+  - section: psalter
+    component: kathismata
+    observance: true
+  - section: psalter
+    component: polyeleos
+    observance: true
+  - section: gospel
+    component: anabathmoi
+    observance: true
+  - section: gospel
+    component: prokeimenon
+    observance: true
+  - section: gospel
+    component: gospel
+    observance: true
+  - section: canon
+    component: canon
+    observance: true
+  - section: conclusion
+    component: exapostilarion
+    observance: true
+  - section: canon
+    component: magnificat
+    observance: true
+  - section: conclusion
+    component: praises
+    observance: true
+  - section: conclusion
+    component: doxastikon
+    observance: true
+  - section: conclusion
+    component: apolytikion
+    observance: true
+  - section: conclusion
+    component: dismissal_commemorations
+    observance: true
 authority:
-  - goarch-major-feast-service-bundles
+  - goarch-dcs-major-feast-source

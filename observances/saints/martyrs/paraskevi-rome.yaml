@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: paraskevi-rome
 name: St Paraskevi of Rome
@@ -17,3 +17,19 @@ authority:
 properties:
   has_glory: true
   both_now_tone: plagal_second
+
+services:
+  great_vespers:
+    lord_i_call:
+      stichera:
+        kind: hymn_set
+        role: saint
+        title: St Paraskevi of Rome - stichera at Lord, I Call
+        authority:
+          - goarch-dcs-2026-07-25-vespers
+      glory:
+        kind: sticheron
+        role: doxastikon
+        title: St Paraskevi of Rome - doxastikon at Lord, I Call
+        authority:
+          - goarch-dcs-2026-07-25-vespers

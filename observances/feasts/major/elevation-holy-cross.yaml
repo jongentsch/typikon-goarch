@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: elevation-holy-cross
 name: Elevation of the Holy Cross
@@ -13,14 +13,6 @@ rank: major-feast
 authority:
   - goarch-elevation-holy-cross-eve-2026
   - goarch-elevation-holy-cross-day-2026
-
-appointments:
-  vespers:
-    complete-propers: goarch-elevation-holy-cross-vespers-2026
-  matins:
-    complete-propers: goarch-elevation-holy-cross-orthros-2026
-  divine_liturgy:
-    complete-propers: goarch-elevation-holy-cross-divine-liturgy-2026
 
 properties:
   major_feast: true

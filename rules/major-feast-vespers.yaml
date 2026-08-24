@@ -1,18 +1,51 @@
-schema: typikon.rule/v0.2
+schema: typikon.rule/v0.3
 
 id: major-feast-vespers
-
 when:
   service: vespers
   observance:
     rank: major-feast
     properties:
       major_feast: true
-
 emit:
-  - section: propers
-    slot: feast
-    appointment: complete-propers
-
+  - section: psalmody
+    component: kathisma
+    observance: true
+  - section: lord_i_call
+    component: stichera
+    observance: true
+  - section: lord_i_call
+    component: glory
+    observance: true
+  - section: lord_i_call
+    component: both_now
+    observance: true
+  - section: entrance
+    component: entrance
+    observance: true
+  - section: entrance
+    component: prokeimenon
+    observance: true
+  - section: entrance
+    component: readings
+    observance: true
+  - section: aposticha
+    component: stichera
+    observance: true
+  - section: aposticha
+    component: glory
+    observance: true
+  - section: aposticha
+    component: both_now
+    observance: true
+  - section: dismissal
+    component: apolytikion
+    observance: true
+  - section: dismissal
+    component: kontakion
+    observance: true
+  - section: dismissal
+    component: dismissal_commemorations
+    observance: true
 authority:
-  - goarch-major-feast-service-bundles
+  - goarch-dcs-major-feast-source

@@ -1,0 +1,45 @@
+schema: typikon.rank/v0.1
+
+id: major-feast
+name: Major feast
+authority:
+  - goarch-dcs-major-feast-source
+services:
+  vespers:
+    required:
+      - section: lord_i_call
+        component: stichera
+      - section: entrance
+        component: readings
+      - section: dismissal
+        component: apolytikion
+  matins:
+    required:
+      - section: god_is_lord
+        component: apolytikia
+      - section: canon
+        component: canon
+      - section: conclusion
+        component: exapostilarion
+      - section: conclusion
+        component: praises
+  divine_liturgy:
+    required:
+      - section: preparation
+        component: antiphons
+      - section: hymns
+        component: troparia
+      - section: hymns
+        component: kontakia
+      - section: readings
+        component: prokeimenon
+      - section: readings
+        component: epistle
+      - section: readings
+        component: alleluia
+      - section: readings
+        component: gospel
+      - section: anaphora
+        component: megalynarion
+      - section: communion
+        component: communion_hymn

@@ -1,15 +1,204 @@
-schema: typikon.service/v0.1
+schema: typikon.service/v0.2
 
 id: great_vespers
 name: Great Vespers
 liturgical_day_offset: 1
-
+authority:
+  - goarch-dcs-major-feast-source
 sections:
+  - id: opening
+    name: Opening
+    components:
+      - id: opening_blessing
+        name: Opening blessing
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Opening blessing
+          citation: 'Horologion: Vespers, opening blessing'
+      - id: come_let_us_worship
+        name: Come, let us worship
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Come, let us worship
+          citation: 'Horologion: invitatory'
+      - id: psalm_103
+        name: Psalm 103
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Psalm 103
+          citation: 'Psalter: Psalm 103'
+      - id: great_litany
+        name: Great Litany
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Great Litany
+          citation: 'Vespers: Litany of Peace'
+  - id: psalmody
+    name: Psalter
+    components:
+      - id: kathisma
+        name: Appointed kathisma
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - psalmody
+      - id: little_litany
+        name: Little Litany
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Little Litany
+          citation: 'Vespers: Little Litany'
   - id: lord_i_call
-    slots:
+    name: Lord, I Call
+    components:
+      - id: psalm_140
+        name: Lord, I call and lamp-lighting psalms
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Lord, I call and lamp-lighting psalms
+          citation: 'Psalter: Psalms 140, 141, 129, and 116'
       - id: stichera
+        name: Stichera
+        kind: changeable
         cardinality: many
+        accepts:
+          - resurrectional
+          - festal
+          - saint
       - id: glory
+        name: Glory doxastikon
+        kind: changeable
         cardinality: optional
+        accepts:
+          - doxastikon
       - id: both_now
+        name: Both now theotokion or stavrotheotokion
+        kind: changeable
         cardinality: optional
+        accepts:
+          - theotokion
+          - dogmatikon
+          - stavrotheotokion
+  - id: entrance
+    name: Entrance and Lessons
+    components:
+      - id: entrance
+        name: Entrance appointment
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - entrance
+      - id: o_gladsome_light
+        name: O Gladsome Light
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: O Gladsome Light
+          citation: 'Vespers: Phos Hilaron'
+      - id: prokeimenon
+        name: Prokeimenon
+        kind: changeable
+        cardinality: one
+        accepts:
+          - prokeimenon
+      - id: readings
+        name: Old Testament readings
+        kind: changeable
+        cardinality: many
+        accepts:
+          - old_testament_reading
+  - id: evening_prayer
+    name: Evening Prayer and Litanies
+    components:
+      - id: vouchsafe_o_lord
+        name: Vouchsafe, O Lord
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Vouchsafe, O Lord
+          citation: 'Vespers: evening prayer'
+      - id: litany_of_supplication
+        name: Litany of Supplication
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Litany of Supplication
+          citation: 'Vespers: evening litany'
+      - id: peace_and_bowing
+        name: Peace and prayer at the bowing of heads
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Peace and prayer at the bowing of heads
+          citation: 'Vespers: prayer at the bowing of heads'
+  - id: aposticha
+    name: Aposticha
+    components:
+      - id: stichera
+        name: Aposticha stichera
+        kind: changeable
+        cardinality: many
+        accepts:
+          - aposticha
+      - id: glory
+        name: Aposticha Glory
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - doxastikon
+      - id: both_now
+        name: Aposticha Both now
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - theotokion
+          - stavrotheotokion
+      - id: song_of_simeon
+        name: Song of Simeon
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Song of Simeon
+          citation: 'Luke 2:29-32'
+      - id: trisagion_prayers
+        name: Trisagion prayers
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Trisagion prayers
+          citation: 'Horologion: Trisagion prayers'
+  - id: dismissal
+    name: Dismissal
+    components:
+      - id: apolytikion
+        name: Apolytikion or troparia
+        kind: changeable
+        cardinality: many
+        accepts:
+          - apolytikion
+          - troparion
+      - id: kontakion
+        name: Kontakion
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - kontakion
+      - id: litany
+        name: Litany and blessing
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Litany and blessing
+          citation: 'Vespers: concluding litany and blessing'
+      - id: dismissal_commemorations
+        name: Dismissal commemorations
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - dismissal_commemoration

@@ -1,11 +1,163 @@
-schema: typikon.service/v0.1
+schema: typikon.service/v0.2
 
 id: matins
-name: Orthros (Matins) feast propers
+name: Orthros (Matins)
 liturgical_day_offset: 0
+authority:
+  - goarch-dcs-major-feast-source
 
 sections:
-  - id: propers
-    slots:
-      - id: feast
+  - id: opening
+    name: Opening and Six Psalms
+    components:
+      - id: opening
+        name: Opening prayers
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Opening prayers
+          citation: 'Horologion: Matins opening'
+      - id: six_psalms
+        name: Six Psalms
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Six Psalms
+          citation: 'Psalter: Psalms 3, 37, 62, 87, 102, and 142'
+      - id: great_litany
+        name: Great Litany
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Great Litany
+          citation: 'Matins: Litany of Peace'
+  - id: god_is_lord
+    name: God is the Lord
+    components:
+      - id: invitatory
+        name: God is the Lord or appointed Alleluia
+        kind: changeable
         cardinality: one
+        accepts:
+          - god_is_the_lord
+          - alleluia_invitatory
+      - id: apolytikia
+        name: Apolytikia and theotokia
+        kind: changeable
+        cardinality: many
+        accepts:
+          - apolytikion
+          - troparion
+          - theotokion
+  - id: psalter
+    name: Psalter and Sessionals
+    components:
+      - id: kathismata
+        name: Kathismata and sessional hymns
+        kind: changeable
+        cardinality: many
+        accepts:
+          - psalmody
+          - kathisma
+          - sessional_hymn
+      - id: polyeleos
+        name: Polyeleos or appointed magnification
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - polyeleos
+          - magnification
+  - id: gospel
+    name: Matins Gospel
+    components:
+      - id: anabathmoi
+        name: Songs of Ascents
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - anabathmoi
+      - id: prokeimenon
+        name: Prokeimenon
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - prokeimenon
+      - id: gospel
+        name: Matins Gospel
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - gospel
+      - id: psalm_50
+        name: Psalm 50
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Psalm 50
+          citation: 'Psalter: Psalm 50'
+  - id: canon
+    name: Canon
+    components:
+      - id: canon
+        name: Canons, odes, and katavasiae
+        kind: changeable
+        cardinality: many
+        accepts:
+          - canon
+          - katavasia
+      - id: magnificat
+        name: Magnificat or appointed Ninth Ode refrains
+        kind: changeable
+        cardinality: one
+        accepts:
+          - magnificat
+          - ninth_ode_refrain
+  - id: conclusion
+    name: Lauds and Dismissal
+    components:
+      - id: exapostilarion
+        name: Exapostilaria
+        kind: changeable
+        cardinality: many
+        accepts:
+          - exapostilarion
+      - id: praises
+        name: Stichera at the Praises
+        kind: changeable
+        cardinality: many
+        accepts:
+          - praises
+      - id: doxastikon
+        name: Glory and Both now at the Praises
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - doxastikon
+          - theotokion
+      - id: great_doxology
+        name: Great Doxology
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Great Doxology
+          citation: 'Horologion: Great Doxology'
+      - id: apolytikion
+        name: Concluding apolytikion
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - apolytikion
+          - troparion
+      - id: litanies
+        name: Concluding litanies
+        kind: fixed
+        material:
+          kind: fixed_text
+          title: Concluding litanies
+          citation: 'Matins: concluding litanies'
+      - id: dismissal_commemorations
+        name: Dismissal commemorations
+        kind: changeable
+        cardinality: optional
+        accepts:
+          - dismissal_commemoration

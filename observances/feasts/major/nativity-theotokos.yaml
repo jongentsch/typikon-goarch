@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: nativity-theotokos
 name: Nativity of the Theotokos
@@ -13,14 +13,6 @@ rank: major-feast
 authority:
   - goarch-nativity-theotokos-eve-2026
   - goarch-nativity-theotokos-day-2026
-
-appointments:
-  vespers:
-    complete-propers: goarch-nativity-theotokos-vespers-2026
-  matins:
-    complete-propers: goarch-nativity-theotokos-orthros-2026
-  divine_liturgy:
-    complete-propers: goarch-nativity-theotokos-divine-liturgy-2026
 
 properties:
   major_feast: true

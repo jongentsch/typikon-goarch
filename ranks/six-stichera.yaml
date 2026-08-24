@@ -1,0 +1,13 @@
+schema: typikon.rank/v0.1
+
+id: six-stichera
+name: Six-stichera saint
+authority:
+  - goarch-dcs-major-feast-source
+services:
+  great_vespers:
+    required:
+      - section: lord_i_call
+        component: stichera
+      - section: lord_i_call
+        component: glory

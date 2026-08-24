@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: stephen-protomartyr-translation
 name: Memory of the Transfer of the Relic of Saint Stephen the Protomartyr
@@ -17,3 +17,19 @@ authority:
 properties:
   has_glory: true
   both_now_tone: plagal_fourth
+
+services:
+  great_vespers:
+    lord_i_call:
+      stichera:
+        kind: hymn_set
+        role: saint
+        title: Memory of the Transfer of the Relic of Saint Stephen the Protomartyr - stichera at Lord, I Call
+        authority:
+          - goarch-dcs-2026-08-01-vespers
+      glory:
+        kind: sticheron
+        role: doxastikon
+        title: Memory of the Transfer of the Relic of Saint Stephen the Protomartyr - doxastikon at Lord, I Call
+        authority:
+          - goarch-dcs-2026-08-01-vespers

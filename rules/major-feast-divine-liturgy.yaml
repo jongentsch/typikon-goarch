@@ -1,18 +1,54 @@
-schema: typikon.rule/v0.2
+schema: typikon.rule/v0.3
 
 id: major-feast-divine-liturgy
-
 when:
   service: divine_liturgy
   observance:
     rank: major-feast
     properties:
       major_feast: true
-
 emit:
-  - section: propers
-    slot: feast
-    appointment: complete-propers
-
+  - section: preparation
+    component: antiphons
+    observance: true
+  - section: little_entrance
+    component: entrance_hymn
+    observance: true
+  - section: hymns
+    component: troparia
+    observance: true
+  - section: hymns
+    component: kontakia
+    observance: true
+  - section: hymns
+    component: trisagion
+    observance: true
+  - section: readings
+    component: prokeimenon
+    observance: true
+  - section: readings
+    component: epistle
+    observance: true
+  - section: readings
+    component: alleluia
+    observance: true
+  - section: readings
+    component: gospel
+    observance: true
+  - section: anaphora
+    component: megalynarion
+    observance: true
+  - section: communion
+    component: communion_hymn
+    observance: true
+  - section: faithful
+    component: cherubic_hymn
+    observance: true
+  - section: communion
+    component: post_communion
+    observance: true
+  - section: dismissal
+    component: dismissal_commemorations
+    observance: true
 authority:
-  - goarch-major-feast-service-bundles
+  - goarch-dcs-major-feast-source

@@ -1,4 +1,4 @@
-schema: typikon.observance/v0.3
+schema: typikon.observance/v0.4
 
 id: annunciation
 name: Annunciation of the Theotokos
@@ -13,14 +13,6 @@ rank: major-feast
 authority:
   - goarch-annunciation-eve-2026
   - goarch-annunciation-day-2026
-
-appointments:
-  vespers:
-    complete-propers: goarch-annunciation-vespers-2026
-  matins:
-    complete-propers: goarch-annunciation-orthros-2026
-  divine_liturgy:
-    complete-propers: goarch-annunciation-divine-liturgy-2026
 
 properties:
   major_feast: true

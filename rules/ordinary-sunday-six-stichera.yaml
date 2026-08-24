@@ -1,7 +1,6 @@
-schema: typikon.rule/v0.2
+schema: typikon.rule/v0.3
 
 id: ordinary-sunday-six-stichera
-
 when:
   service: great_vespers
   day:
@@ -11,37 +10,28 @@ when:
     rank: six-stichera
     properties:
       has_glory: true
-
 emit:
   - section: lord_i_call
-    slot: stichera
+    component: stichera
     material:
-      source: octoechos
-      kind: sticheron
+      kind: hymn_set
       role: resurrectional
-      tone: $day.tone
+      title: Resurrectional stichera from the Octoechos
+      attributes:
+        tone: $day.tone
     count: 6
-
   - section: lord_i_call
-    slot: stichera
-    material:
-      source: observance
-      kind: sticheron
-      role: festal
-      observance: $observance.id
+    component: stichera
+    observance: true
     count: 4
-
   - section: lord_i_call
-    slot: glory
-    material:
-      source: observance
-      kind: sticheron
-      role: doxastikon
-      observance: $observance.id
-
+    component: glory
+    observance: true
   - section: lord_i_call
-    slot: both_now
+    component: both_now
     material:
-      source: octoechos
       kind: theotokion
-      tone: $observance.properties.both_now_tone
+      role: dogmatikon
+      title: Appointed theotokion
+      attributes:
+        tone: $day.tone
